@@ -1,0 +1,721 @@
+
+
+/* Mobile-first (handphone) */
+.website{
+  box-sizing: border-box;
+  padding: 16px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Logo */
+.logo-al-ma-soem{
+  display: block;
+  max-width: 160px;
+  width: 40%;
+  height: auto;
+  margin: 12px auto;
+}
+
+/* Navbar: stack vertically on mobile */
+.navbar{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.navbar a{
+  text-decoration: none;
+  color: #111;
+  padding: 8px 12px;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+/* Content images scale */
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* Simple grid for main area (will become 2-col on larger screens) */
+.website-grid{
+  display: block;
+}
+
+/* Tablet */
+@media (min-width: 600px){
+  .logo-al-ma-soem{ max-width: 200px; width: auto; margin-left: 16px; margin-right: 16px; }
+  .navbar{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .navbar a{ font-size: 15px; padding: 10px 14px; }
+  .website{ padding: 20px; }
+}
+
+/* Laptop / MacBook */
+@media (min-width: 992px){
+  .website{
+    max-width: 1100px;
+    padding: 24px;
+  }
+  /* create two-column layout: main + sidebar */
+  .website-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+
+  /* place big images/content in left column; adjust logo/nav */
+  .logo-al-ma-soem{ margin: 0; float: left; }
+  .navbar{ justify-content: flex-end; gap: 18px; align-items: center; flex: 1; }
+  .navbar a{ font-size: 16px; }
+}
+
+/* Desktop (large) */
+@media (min-width: 1200px){
+  .website{ max-width: 1300px; padding: 32px; }
+  .logo-al-ma-soem{ max-width: 220px; }
+  .navbar a{ font-size: 17px; padding: 12px 16px; }
+}
+
+/* Accessibility / touch targets */
+.navbar a{ border-radius: 6px; }
+.navbar a:focus, .navbar a:hover{ background: rgba(0,0,0,0.05); outline: none; }
+
+.website {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  min-width: 1920px;
+  min-height: 4746px;
+  position: relative;
+}
+
+.website .rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 185px;
+  background-color: #9fd2fa;
+}
+
+.website .navbar {
+  position: absolute;
+  top: 107px;
+  left: 875px;
+  width: 888px;
+  height: 25px;
+}
+
+.website .text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 129px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .div {
+  left: 151px;
+  width: 85px;
+  position: absolute;
+  top: 1px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .text-wrapper-2 {
+  left: 251px;
+  width: 85px;
+  position: absolute;
+  top: 1px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .text-wrapper-3 {
+  left: 366px;
+  width: 85px;
+  position: absolute;
+  top: 1px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .text-wrapper-4 {
+  left: 444px;
+  width: 85px;
+  position: absolute;
+  top: 1px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .text-wrapper-5 {
+  left: 536px;
+  width: 113px;
+  position: absolute;
+  top: 1px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .text-wrapper-6 {
+  left: 669px;
+  width: 113px;
+  position: absolute;
+  top: 1px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .text-wrapper-7 {
+  position: absolute;
+  top: 1px;
+  left: 759px;
+  width: 113px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .logo-al-ma-soem {
+  position: absolute;
+  top: 71px;
+  left: 95px;
+  width: 296px;
+  height: 72px;
+  aspect-ratio: 4.1;
+  object-fit: cover;
+}
+
+.website .rectangle-2 {
+  position: absolute;
+  top: 2762px;
+  left: -16px;
+  width: 1920px;
+  height: 453px;
+  background-color: #f0f3f5;
+}
+
+.website .rectangle-3 {
+  position: absolute;
+  top: 3768px;
+  left: 0;
+  width: 1920px;
+  height: 978px;
+  background-color: #696766;
+}
+
+.website .rectangle-4 {
+  position: absolute;
+  top: 2835px;
+  left: 166px;
+  width: 432px;
+  height: 119px;
+  background-color: #d9d9d9;
+}
+
+.website .rectangle-5 {
+  position: absolute;
+  top: 2857px;
+  left: 195px;
+  width: 8px;
+  height: 50px;
+  background-color: #d07676;
+}
+
+.website .rectangle-6 {
+  position: absolute;
+  top: 2835px;
+  left: 728px;
+  width: 432px;
+  height: 308px;
+  background-color: #d9d9d9;
+}
+
+.website .rectangle-7 {
+  position: absolute;
+  top: 2835px;
+  left: 1300px;
+  width: 432px;
+  height: 119px;
+  background-color: #d9d9d9;
+}
+
+.website .rectangle-8 {
+  position: absolute;
+  top: 2875px;
+  left: 762px;
+  width: 8px;
+  height: 50px;
+  background-color: #d07676;
+}
+
+.website .rectangle-9 {
+  position: absolute;
+  top: 2857px;
+  left: 1343px;
+  width: 8px;
+  height: 50px;
+  background-color: #d07676;
+}
+
+.website .text-wrapper-8 {
+  position: absolute;
+  top: 2865px;
+  left: 222px;
+  width: 280px;
+  -webkit-text-stroke: 1px #0000004c;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .text-wrapper-9 {
+  position: absolute;
+  top: 2876px;
+  left: 803px;
+  width: 280px;
+  -webkit-text-stroke: 1px #0000004c;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .fasilitas-kampus {
+  position: absolute;
+  top: 2931px;
+  left: 803px;
+  width: 281px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .span {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.website .text-wrapper-10 {
+  text-decoration: underline;
+}
+
+.website .text-wrapper-11 {
+  position: absolute;
+  top: 2870px;
+  left: 1379px;
+  width: 203px;
+  -webkit-text-stroke: 1px #00000069;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .siapkan-diri-hadapi {
+  position: absolute;
+  top: 3318px;
+  left: 183px;
+  width: 352px;
+  height: 264px;
+  aspect-ratio: 1.33;
+  object-fit: cover;
+}
+
+.website .siap-jadi-konselor {
+  position: absolute;
+  top: 3318px;
+  left: 598px;
+  width: 352px;
+  height: 264px;
+  aspect-ratio: 1.33;
+  object-fit: cover;
+}
+
+.website .rectangle-10 {
+  position: absolute;
+  top: 3556px;
+  left: 183px;
+  width: 352px;
+  height: 170px;
+  background-color: #d9d9d9;
+}
+
+.website .rectangle-11 {
+  position: absolute;
+  top: 3556px;
+  left: 598px;
+  width: 352px;
+  height: 170px;
+  background-color: #d9d9d9;
+}
+
+.website .raih-karir-global {
+  position: absolute;
+  top: 3318px;
+  left: 1025px;
+  width: 351px;
+  height: 263px;
+  aspect-ratio: 1.33;
+  object-fit: cover;
+}
+
+.website .berapa-biaya-kuliah {
+  position: absolute;
+  top: 3318px;
+  left: 1482px;
+  width: 351px;
+  height: 263px;
+  aspect-ratio: 1.33;
+  object-fit: cover;
+}
+
+.website .p {
+  position: absolute;
+  top: 3607px;
+  left: 205px;
+  width: 298px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #013ab4;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .siap-jadi-konselor-2 {
+  position: absolute;
+  top: 3600px;
+  left: 625px;
+  width: 298px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #013ab4;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .rectangle-12 {
+  position: absolute;
+  top: 3556px;
+  left: 1025px;
+  width: 352px;
+  height: 170px;
+  background-color: #d9d9d9;
+}
+
+.website .rectangle-13 {
+  position: absolute;
+  top: 3556px;
+  left: 1481px;
+  width: 352px;
+  height: 170px;
+  background-color: #d9d9d9;
+}
+
+.website .text-wrapper-12 {
+  left: 207px;
+  position: absolute;
+  top: 3574px;
+  width: 147px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #db5757;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.website .text-wrapper-13 {
+  left: 625px;
+  position: absolute;
+  top: 3574px;
+  width: 147px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #db5757;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.website .text-wrapper-14 {
+  left: 1053px;
+  position: absolute;
+  top: 3574px;
+  width: 147px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #db5757;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.website .text-wrapper-15 {
+  left: 1511px;
+  position: absolute;
+  top: 3574px;
+  width: 147px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #db5757;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.website .raih-karir-global-2 {
+  position: absolute;
+  top: 3602px;
+  left: 1052px;
+  width: 298px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #013ab4;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .berapa-biaya-kuliah-2 {
+  position: absolute;
+  top: 3600px;
+  left: 1512px;
+  width: 298px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #013ab4;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .text-wrapper-16 {
+  position: absolute;
+  top: 3243px;
+  left: 767px;
+  width: 368px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.website .selamat-datang {
+  position: absolute;
+  top: 185px;
+  left: 0;
+  width: 1920px;
+  height: 1363px;
+  aspect-ratio: 1.41;
+  object-fit: cover;
+}
+
+.website .fakultas-teknik {
+  position: absolute;
+  top: 66px;
+  left: 435px;
+  width: 248px;
+  height: 82px;
+  aspect-ratio: 3.02;
+  object-fit: cover;
+}
+
+.website .fakultas-teknik-kini {
+  position: absolute;
+  top: 1656px;
+  left: 160px;
+  width: 1572px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .text-wrapper-17 {
+  position: absolute;
+  top: 4037px;
+  left: 135px;
+  width: 660px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .jl-raya-cipacing-no {
+  position: absolute;
+  top: 4180px;
+  left: 135px;
+  width: 639px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .text-wrapper-18 {
+  position: absolute;
+  top: 4036px;
+  left: 1098px;
+  width: 533px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .informasi-fakultas {
+  position: absolute;
+  top: 4180px;
+  left: 1098px;
+  width: 573px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .text-wrapper-19 {
+  position: absolute;
+  top: 4651px;
+  left: 663px;
+  width: 553px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.website .line {
+  position: absolute;
+  top: 4607px;
+  left: 0;
+  width: 1920px;
+  height: 5px;
+  object-fit: cover;
+}
+
+
+/* MacBook-specific (contoh: MacBook Air / 13" Retina) */
+@media (min-width: 1280px) and (max-width: 1440px){
+  .website{
+    max-width: 1300px;
+    padding: 28px;
+  }
+  .logo-al-ma-soem{ max-width: 200px; }
+  .navbar{ display:flex; flex-direction:row; justify-content:flex-end; gap:18px; }
+  /* sesuaikan elemen lain agar terlihat berbeda di MacBook */
+}
+/* Debug / override responsif untuk logo + navbar */
+.logo-al-ma-soem{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 160px; /* default */
+  transition: width 0.2s ease;
+  /* hapus !important jika tidak perlu setelah uji */
+}
+
+/* Mobile (handphone) */
+@media (max-width: 599px){
+  .logo-al-ma-soem{ width: 120px !important; }
+  .navbar{ flex-direction: column !important; gap: 8px !important; align-items: center !important; }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 991px){
+  .logo-al-ma-soem{ width: 160px !important; }
+  .navbar{ flex-direction: row !important; justify-content: center !important; }
+}
+
+/* Laptop / MacBook (contoh 13") */
+@media (min-width: 992px) and (max-width: 1279px){
+  .logo-al-ma-soem{ width: 200px !important; }
+  .website{ max-width: 1100px; margin: 0 auto; }
+}
+
+/* MacBook Air / Desktop besar */
+@media (min-width: 1280px){
+  .logo-al-ma-soem{ width: 220px !important; }
+  .website{ max-width: 1300px; margin: 0 auto; }
+}
